@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-llrf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-ucgv-tenant/mc-quality-dashboard/backend-quality-dashboard-llrf@sha256:c9b21a5bd4d2e3817ce940bbd8bc9e5dfbb530836e6d0bd8fa283dfed5d910b2
+        name: container-image
+        resources: {}
+status: {}
